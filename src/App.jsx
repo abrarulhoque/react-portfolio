@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import './App.css';
 import abrarImage from './assets/abrar.JPG';
+import abrarMobileImage from './assets/abrar-2.jpg';
 import colorSampleImage from './assets/color-sample.png';
 import basementImage from './assets/basement.png';
 import vapeSocietyImage from './assets/vape-society.png';
@@ -399,7 +400,7 @@ function App() {
               </p>
               
               <div className="credibility-stats">
-                <div className="stat-chip">7+ yrs</div>
+                <div className="stat-chip">4+ yrs</div>
                 <div className="stat-chip">30+ projects</div>
                 <div className="stat-chip">~92 Lighthouse</div>
               </div>
@@ -474,15 +475,19 @@ function App() {
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
                 {/* Mobile Profile Image - Only visible on mobile */}
-                <motion.img 
-                  src={abrarImage} 
-                  alt="Abrar Ul Hoque" 
-                  className="hero-mobile-profile"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  loading="eager"
-                />
+                <div className="hero-mobile-profile-wrapper">
+                  <div className="gradient-border">
+                    <motion.img 
+                      src={abrarMobileImage} 
+                      alt="Abrar Ul Hoque" 
+                      className="hero-mobile-profile"
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      loading="eager"
+                    />
+                  </div>
+                </div>
                 
                 <div className="hero-content">
                   <motion.h1 
