@@ -146,6 +146,13 @@ img, video {
   justify-content: center;
   position: relative;
   overflow-x: hidden;
+  background: linear-gradient(135deg, 
+    #0a0a0a 0%, 
+    #1a0f0f 25%, 
+    #2d1b1b 50%, 
+    #1a0f0f 75%, 
+    #0a0a0a 100%
+  );
 }
 
 @supports (min-height: 100dvh) {
@@ -1788,7 +1795,7 @@ img, video {
   }
   
   .profile-image {
-    height: 160px;
+    height: 220px;
   }
   
   .skills-grid {

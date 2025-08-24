@@ -16,7 +16,7 @@ import {
   Award
 } from 'lucide-react';
 import './App.css';
-import abrarImage from './assets/abrar.JPG';
+import abrarImage from './assets/abrar-3.png';
 import abrarMobileImage from './assets/abrar-2.jpg';
 import colorSampleImage from './assets/color-sample.png';
 import basementImage from './assets/basement.png';
