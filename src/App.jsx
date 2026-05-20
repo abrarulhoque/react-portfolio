@@ -12,8 +12,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./App.css";
-import abrarMobileImage from "./assets/abrar-2.jpg";
-import abrarImage from "./assets/abrar-3.png";
+import portraitImage from "./assets/abrarul-hoque-web-designer-developer.jpg";
 import basementImage from "./assets/basement.png";
 import colorSampleImage from "./assets/color-sample.png";
 import fundamentosImage from "./assets/fundamentos.png";
@@ -21,6 +20,9 @@ import pickleheadsImage from "./assets/pickleheads.png";
 import pickleballImage from "./assets/picklkeball.png";
 import unitedSecuredImage from "./assets/united-secured.png";
 import vapeSocietyImage from "./assets/vape-society.png";
+
+const abrarMobileImage = portraitImage;
+const abrarImage = portraitImage;
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
