@@ -1,70 +1,124 @@
 {
-  "hash": "6f100116",
-  "configHash": "646feefe",
-  "lockfileHash": "c0f51d10",
-  "browserHash": "794fb3ba",
+  "hash": "4fbb9978",
+  "configHash": "6489313d",
+  "lockfileHash": "338f8512",
+  "browserHash": "f056d46d",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "e08ba311",
+      "fileHash": "a7fce04c",
       "needsInterop": true
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "f868d576",
+      "fileHash": "1c6b1182",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "f23954c7",
+      "fileHash": "c3021caa",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "721dd58a",
+      "fileHash": "d72e0cc9",
       "needsInterop": true
     },
     "@emailjs/browser": {
       "src": "../../node_modules/@emailjs/browser/es/index.js",
       "file": "@emailjs_browser.js",
-      "fileHash": "b6dde210",
+      "fileHash": "1a0ca3a3",
       "needsInterop": false
     },
-    "framer-motion": {
-      "src": "../../node_modules/framer-motion/dist/es/index.mjs",
-      "file": "framer-motion.js",
-      "fileHash": "6d780d8c",
+    "@react-three/drei": {
+      "src": "../../node_modules/@react-three/drei/index.js",
+      "file": "@react-three_drei.js",
+      "fileHash": "da686a53",
+      "needsInterop": false
+    },
+    "@react-three/fiber": {
+      "src": "../../node_modules/@react-three/fiber/dist/react-three-fiber.esm.js",
+      "file": "@react-three_fiber.js",
+      "fileHash": "f1232a75",
+      "needsInterop": false
+    },
+    "@react-three/postprocessing": {
+      "src": "../../node_modules/@react-three/postprocessing/dist/index.js",
+      "file": "@react-three_postprocessing.js",
+      "fileHash": "23b98c83",
       "needsInterop": false
     },
     "lucide-react": {
       "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
       "file": "lucide-react.js",
-      "fileHash": "549c0c66",
+      "fileHash": "09e92f51",
       "needsInterop": false
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "4105a5b7",
+      "fileHash": "15e82a51",
       "needsInterop": true
+    },
+    "react-icons/fa6": {
+      "src": "../../node_modules/react-icons/fa6/index.mjs",
+      "file": "react-icons_fa6.js",
+      "fileHash": "39c7163c",
+      "needsInterop": false
+    },
+    "react-icons/si": {
+      "src": "../../node_modules/react-icons/si/index.mjs",
+      "file": "react-icons_si.js",
+      "fileHash": "093117bd",
+      "needsInterop": false
+    },
+    "three": {
+      "src": "../../node_modules/three/build/three.module.js",
+      "file": "three.js",
+      "fileHash": "7d7ca29c",
+      "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-2FIHDXPZ": {
-      "file": "chunk-2FIHDXPZ.js"
+    "chunk-QRCRLLN4": {
+      "file": "chunk-QRCRLLN4.js"
     },
-    "chunk-PFG2UKEP": {
-      "file": "chunk-PFG2UKEP.js"
+    "hls-GVUDWX7Y": {
+      "file": "hls-GVUDWX7Y.js"
     },
-    "chunk-32EALFBN": {
-      "file": "chunk-32EALFBN.js"
+    "vision_bundle-AO7DZDPU": {
+      "file": "vision_bundle-AO7DZDPU.js"
     },
-    "chunk-G3PMV62Z": {
-      "file": "chunk-G3PMV62Z.js"
+    "chunk-GC7GEBZA": {
+      "file": "chunk-GC7GEBZA.js"
+    },
+    "chunk-LFC33N37": {
+      "file": "chunk-LFC33N37.js"
+    },
+    "chunk-4XTJIL2V": {
+      "file": "chunk-4XTJIL2V.js"
+    },
+    "chunk-QZRPTSVS": {
+      "file": "chunk-QZRPTSVS.js"
+    },
+    "chunk-2D5QQ4LC": {
+      "file": "chunk-2D5QQ4LC.js"
+    },
+    "chunk-4YBSBMDR": {
+      "file": "chunk-4YBSBMDR.js"
+    },
+    "chunk-EMXPSXJH": {
+      "file": "chunk-EMXPSXJH.js"
+    },
+    "chunk-VVXSE5JX": {
+      "file": "chunk-VVXSE5JX.js"
+    },
+    "chunk-PX6F3LHL": {
+      "file": "chunk-PX6F3LHL.js"
     }
   }
 }

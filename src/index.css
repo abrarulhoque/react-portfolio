@@ -1,67 +1,133 @@
+/* ============================================================
+   GLOBAL DESIGN TOKENS — motherboard palette + typography
+   Every component pulls from these; never hardcode colors.
+   ============================================================ */
+:root {
+  /* palette */
+  --bg: #04070a;
+  --bg-raised: #0a1210;
+  --panel: rgba(8, 18, 16, 0.78);
+  --panel-solid: #0b1513;
+  --line: rgba(45, 226, 195, 0.16);
+  --line-strong: rgba(45, 226, 195, 0.38);
+
+  --text: #e8f1ee;
+  --text-dim: #93aca4;
+  --text-faint: #5c7a71;
+
+  --accent: #2de2c3;      /* trace cyan */
+  --accent-2: #39d353;    /* terminal green */
+  --copper: #e8b84b;      /* gold pads */
+  --danger: #ff6b6b;
+
+  --accent-glow: rgba(45, 226, 195, 0.35);
+
+  /* typography */
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.85rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: clamp(1.5rem, 3vw, 2rem);
+  --text-display: clamp(2.4rem, 7vw, 4.6rem);
+
+  /* spacing & misc */
+  --space-1: 0.375rem;
+  --space-2: 0.75rem;
+  --space-3: 1.25rem;
+  --space-4: 2rem;
+  --space-5: 3.5rem;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --header-h: 58px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;   /* clamp horizontal overflow at the root */
+html {
+  scroll-behavior: smooth;
 }
 
-#root, .app {
-  height: auto;
-  overflow: visible !important;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #0a0a0a;
-  color: white;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  overflow-x: hidden;
 }
 
-/* just in case any media tries to be wider than its container */
-img, video {
-  display: block;
+h1, h2, h3, h4 {
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+img {
   max-width: 100%;
-  height: auto;
+  display: block;
 }
 
-/* Removed global smooth scroll to avoid conflicts with JS smooth scrolling */
-
-/* Custom scrollbar styles removed to avoid conflicts with DevTools device emulation */
-
-/* Custom properties for theming */
-:root {
-  --primary-red: #e53e3e;
-  --dark-bg: #0a0a0a;
-  --card-bg: #1a1a1a;
-  --card-bg-hover: #2a2a2a;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --border-radius: 16px;
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 16px 64px rgba(0, 0, 0, 0.4);
+::selection {
+  background: var(--accent);
+  color: var(--bg);
 }
 
-/* Responsive breakpoints */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 13px;
-  }
+/* thin mono scrollbar fits the terminal aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #14312a;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4a3f;
 }
