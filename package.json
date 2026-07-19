@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "fetch-data": "node scripts/fetch-github.mjs",
+    "fetch-data-v2": "node scripts/fetch-github-v2.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

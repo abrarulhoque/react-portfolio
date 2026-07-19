@@ -1,0 +1,388 @@
+{
+  "user": "abrarulhoque",
+  "fetchedAt": "2026-07-19T20:43:41.675Z",
+  "repoCount": 54,
+  "totalCommits": 1154,
+  "totalFiles": 18773,
+  "oldestRepo": "portfolio",
+  "repos": [
+    {
+      "name": "portfolio",
+      "commits": 9,
+      "files": 107,
+      "topLevel": 10,
+      "readme": "Abrarul Hoque - Portfolio Website A modern, responsive portfolio website showcasing full-stack development expertise, projects, and professional experience. 🚀 Live Demo Visit the live portfolio: abrarul.toufikhasan.com 📋 Table of Contents - About - Features - Technologies Used - Project Structure - Installation - …"
+    },
+    {
+      "name": "basic-bank",
+      "commits": 1,
+      "files": 7,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "woo-tax-exemption",
+      "commits": 1,
+      "files": 1,
+      "topLevel": 1,
+      "readme": null
+    },
+    {
+      "name": "iconic-delivery-slot-customization",
+      "commits": 2,
+      "files": 1,
+      "topLevel": 1,
+      "readme": null
+    },
+    {
+      "name": "delivery-slot-customization",
+      "commits": 4,
+      "files": 1,
+      "topLevel": 1,
+      "readme": null
+    },
+    {
+      "name": "To-Do-List-Using-HTML-CSS-and-JS",
+      "commits": 2,
+      "files": 6,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "Random-Passsword-Generator-HTML-CSS-JS",
+      "commits": 2,
+      "files": 4,
+      "topLevel": 4,
+      "readme": "Random-Passsword-Generator-HTML-CSS-JS This mini app generates random password using javascript and the visual part was designed using vanilla CSS"
+    },
+    {
+      "name": "tic-tac-toe",
+      "commits": 1,
+      "files": 3,
+      "topLevel": 3,
+      "readme": null
+    },
+    {
+      "name": "graph-algorithms",
+      "commits": 2,
+      "files": 2,
+      "topLevel": 2,
+      "readme": null
+    },
+    {
+      "name": "c-algorithms",
+      "commits": 4,
+      "files": 11,
+      "topLevel": 10,
+      "readme": null
+    },
+    {
+      "name": "react-real-estate",
+      "commits": 13,
+      "files": 54,
+      "topLevel": 10,
+      "readme": "React + Vite This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. Currently, two official plugins are available: - @vitejs/plugin-react uses Babel for Fast Refresh - @vitejs/plugin-react-swc uses SWC for Fast Refresh"
+    },
+    {
+      "name": "quiz",
+      "commits": 4,
+      "files": 7,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "toyota-quiz",
+      "commits": 5,
+      "files": 17,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "pudo-shipping",
+      "commits": 1,
+      "files": 14,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "demo",
+      "commits": 0,
+      "files": null,
+      "topLevel": null,
+      "readme": null
+    },
+    {
+      "name": "knowledge-feed",
+      "commits": 2,
+      "files": 16,
+      "topLevel": 10,
+      "readme": "Knowledge Feed A TikTok-style infinite scroll web application that generates educational content using AI. Replace your mindless scrolling with meaningful learning! Features - Infinite scroll interface similar to TikTok/Instagram Reels - AI-generated educational content - Smooth animations and transitions - …"
+    },
+    {
+      "name": "woocommerce-shipping-checker",
+      "commits": 2,
+      "files": 9,
+      "topLevel": 9,
+      "readme": "Vape Society Shipping Checker A WordPress/WooCommerce plugin that allows customers to check if shipping is available to their location by entering a zip code. Features - Simple ZIP code validation interface - Integration with WooCommerce shipping zones - Special shipping restriction notifications for California …"
+    },
+    {
+      "name": "pdf-editor",
+      "commits": 3,
+      "files": 9,
+      "topLevel": 9,
+      "readme": "PDF Size Chart Converter A web-based application that allows users to upload PDFs containing size charts, select specific regions, and automatically convert inch measurements to centimeters directly in the PDF document. Features - Upload multiple PDF files - Interactive PDF viewing - Area selection for size charts …"
+    },
+    {
+      "name": "renovation-web-app",
+      "commits": 4,
+      "files": 11493,
+      "topLevel": 15,
+      "readme": "Bathroom Renovation Quote System A comprehensive web application for generating bathroom renovation quotes. This system is designed to collect detailed information about bathroom renovation projects and generate accurate quotes. Features - Detailed form collection for personal details - Property information gathering …"
+    },
+    {
+      "name": "basement88-shopify-theme",
+      "commits": 28,
+      "files": 530,
+      "topLevel": 9,
+      "readme": null
+    },
+    {
+      "name": "goldenstone",
+      "commits": 20,
+      "files": 15,
+      "topLevel": 11,
+      "readme": null
+    },
+    {
+      "name": "student-grade-management",
+      "commits": 3,
+      "files": 5,
+      "topLevel": 2,
+      "readme": "Student Grade Management System A Java application for managing student records, grades, and performance. This system allows users to add, search, update, and delete students, as well as track their grades and calculate averages. Features - Add and manage both undergraduate and graduate students - Add grades for …"
+    },
+    {
+      "name": "community-safety",
+      "commits": 9,
+      "files": 3345,
+      "topLevel": 13,
+      "readme": null
+    },
+    {
+      "name": "divi-text-editor",
+      "commits": 7,
+      "files": 12,
+      "topLevel": 6,
+      "readme": null
+    },
+    {
+      "name": "ask-ai",
+      "commits": 8,
+      "files": 52,
+      "topLevel": 8,
+      "readme": "AskAI - English Language Learning Assistant AskAI is an Android application designed to help non-native English speakers understand vocabulary and expressions. The app allows users to select text from any application and get clear, simple explanations, making English learning more accessible. Features - Text Selection …"
+    },
+    {
+      "name": "ascend-shopify-theme",
+      "commits": 4,
+      "files": 325,
+      "topLevel": 7,
+      "readme": null
+    },
+    {
+      "name": "quick-cap-ltd",
+      "commits": 11,
+      "files": 42,
+      "topLevel": 18,
+      "readme": null
+    },
+    {
+      "name": "kolorama-feed",
+      "commits": 1,
+      "files": 1,
+      "topLevel": 1,
+      "readme": null
+    },
+    {
+      "name": "kolorama-connector",
+      "commits": 4,
+      "files": 18,
+      "topLevel": 7,
+      "readme": null
+    },
+    {
+      "name": "free-colour-samples",
+      "commits": 68,
+      "files": 22,
+      "topLevel": 7,
+      "readme": null
+    },
+    {
+      "name": "divi-text-editor-enhanced",
+      "commits": 16,
+      "files": 8,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "dental-pod",
+      "commits": 5,
+      "files": 355,
+      "topLevel": 8,
+      "readme": null
+    },
+    {
+      "name": "pudo",
+      "commits": 4,
+      "files": 15,
+      "topLevel": 5,
+      "readme": null
+    },
+    {
+      "name": "react-portfolio",
+      "commits": 9,
+      "files": 97,
+      "topLevel": 12,
+      "readme": "React + Vite This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules. Currently, two official plugins are available: - @vitejs/plugin-react uses Babel for Fast Refresh - @vitejs/plugin-react-swc uses SWC for Fast Refresh Expanding the ESLint configuration If you are …"
+    },
+    {
+      "name": "dirtpre-shopify-theme",
+      "commits": 17,
+      "files": 388,
+      "topLevel": 8,
+      "readme": null
+    },
+    {
+      "name": "slidefirepro-elementor-widgets",
+      "commits": 16,
+      "files": 10,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "wright-courier",
+      "commits": 26,
+      "files": 18,
+      "topLevel": 9,
+      "readme": "Wright Courier Calculator for WooCommerce A custom WooCommerce plugin for selling A→B courier services with real-time, distance-based pricing at checkout. This plugin focuses on the Courier Delivery service with Google Address Autocomplete, server-side price calculation, and automatic line-item pricing in …"
+    },
+    {
+      "name": "steel-down",
+      "commits": 436,
+      "files": 343,
+      "topLevel": 9,
+      "readme": null
+    },
+    {
+      "name": "SlideFirePro-Widgets",
+      "commits": 53,
+      "files": 49,
+      "topLevel": 5,
+      "readme": null
+    },
+    {
+      "name": "coffe-grears",
+      "commits": 160,
+      "files": 366,
+      "topLevel": 9,
+      "readme": null
+    },
+    {
+      "name": "shipping-availablity-checker",
+      "commits": 2,
+      "files": 7,
+      "topLevel": 7,
+      "readme": "=== WooCommerce ZIP Code Shipping Checker === A simple plugin that allows customers to check shipping availability by ZIP code without going through the checkout process. == Description == This plugin connects your custom \"Do We Ship To You?\" page with WooCommerce's native shipping availability checker to provide a …"
+    },
+    {
+      "name": "AskAI",
+      "commits": 9,
+      "files": 52,
+      "topLevel": 8,
+      "readme": "AskAI - English Language Learning Assistant AskAI is an Android application designed to help non-native English speakers understand vocabulary and expressions. The app allows users to select text from any application and get clear, simple explanations, making English learning more accessible. Features - Text Selection …"
+    },
+    {
+      "name": "FinanceAI",
+      "commits": 1,
+      "files": 65,
+      "topLevel": 10,
+      "readme": null
+    },
+    {
+      "name": "Friday",
+      "commits": 1,
+      "files": 79,
+      "topLevel": 10,
+      "readme": null
+    },
+    {
+      "name": "Jarvis",
+      "commits": 1,
+      "files": 56,
+      "topLevel": 8,
+      "readme": null
+    },
+    {
+      "name": "NegotiateAssistant",
+      "commits": 1,
+      "files": 71,
+      "topLevel": 11,
+      "readme": "1. Do not try to build the entire project at once, instead build a small part. Run build command, If you get errors fix them. Only move to next part after the build is successful 2. Use ./gradlew build command to build the project 3. If you can't fix an error in first attempt search the web to find up to date info, …"
+    },
+    {
+      "name": "NotificationHelper",
+      "commits": 1,
+      "files": 52,
+      "topLevel": 8,
+      "readme": null
+    },
+    {
+      "name": "germanized-extended",
+      "commits": 6,
+      "files": 22,
+      "topLevel": 17,
+      "readme": "Germanized AED Totals A WordPress plugin that extends WooCommerce Germanized Pro's StoreaBill functionality to display invoice totals in AED (United Arab Emirates Dirham) currency alongside the original EUR amounts. Features - Automatic Currency Conversion: Converts EUR amounts to AED using real-time exchange rates - …"
+    },
+    {
+      "name": "dirtprep-shopify",
+      "commits": 47,
+      "files": 367,
+      "topLevel": 8,
+      "readme": null
+    },
+    {
+      "name": "parcel-wise",
+      "commits": 33,
+      "files": 32,
+      "topLevel": 10,
+      "readme": null
+    },
+    {
+      "name": "rushby-redesigned",
+      "commits": 9,
+      "files": 60,
+      "topLevel": 15,
+      "readme": "This is a Next.js project bootstrapped with create-next-app. Getting Started First, run the development server: Open http://localhost:3000 with your browser to see the result. You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file. This project uses next/font to …"
+    },
+    {
+      "name": "rushby-widgets",
+      "commits": 42,
+      "files": 25,
+      "topLevel": 4,
+      "readme": null
+    },
+    {
+      "name": "galerie-mueller-widgets-public",
+      "commits": 33,
+      "files": 64,
+      "topLevel": 3,
+      "readme": null
+    },
+    {
+      "name": "FiverrxDiscord",
+      "commits": 1,
+      "files": 43,
+      "topLevel": 9,
+      "readme": null
+    }
+  ]
+}

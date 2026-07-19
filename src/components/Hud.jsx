@@ -27,6 +27,13 @@ export default function Hud({ activeSection, tier }) {
           <span className="hud-tier" title="Render fidelity picked for your device">
             FID:{tier.toUpperCase()}
           </span>
+          <a
+            href="/v2.html"
+            className="hud-tier"
+            title="Experiment: the self-compiling portfolio"
+          >
+            V2β
+          </a>
           <a href="#contact" className="hud-express">
             EXPRESS <span aria-hidden="true">⏵</span>
           </a>

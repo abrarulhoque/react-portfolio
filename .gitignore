@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# vite dep cache (cacheDir in vite.config.js)
+.vite-cache
