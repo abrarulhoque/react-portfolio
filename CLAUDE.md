@@ -1,5 +1,15 @@
 # Portfolio — Abrar (abrarulhoque.com)
 
+## Current homepage (September 2026)
+
+The homepage is now the lunar portfolio in `src/App.jsx`, with content from `src/lunar/content.js`, illustrations in `src/lunar/ProjectVisual.jsx`, and a lazy-loaded React Three Fiber scene in `src/lunar/MoonScene.jsx`. Styles are `src/index.css` and `src/App.css`. The source content pack is `content/portfolio-content-2026-09.md`; keep pending client identities anonymous and omit unverified claims. See `README.md` and `docs/lunar-design.md` for current behavior. Contact uses email and WhatsApp links. The original portrait supplied as `new_profile.png` is retained; the delivered JPEG lives in `public/images/`.
+
+The city experiment still runs at `/v2.html` and now imports `src/v2/legacy-base.css` so its original appearance is isolated from the redesign.
+
+## Historical motherboard homepage
+
+The following motherboard architecture describes the previous homepage, whose source files remain in the repository. It does not describe the current root route.
+
 React 19 + Vite portfolio, redesigned (Jul 2026) as a 3D "motherboard" experience with three.js / @react-three/fiber. Concept: the site is a PCB — visitor scrolls and the camera glides over districts (hero → about/PWR → skills breadboard → project modules + GitHub repo skyline → XP bus → gold edge connector = contact).
 
 ## Architecture

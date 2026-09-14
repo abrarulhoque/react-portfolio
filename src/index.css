@@ -1,110 +1,94 @@
-/* ============================================================
-   GLOBAL DESIGN TOKENS — motherboard palette + typography
-   Every component pulls from these; never hardcode colors.
-   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;450;500;550;600;650;700;750;800&display=swap");
 :root {
-  /* palette */
-  --bg: #04070a;
-  --bg-raised: #0a1210;
-  --panel: rgba(8, 18, 16, 0.78);
-  --panel-solid: #0b1513;
-  --line: rgba(45, 226, 195, 0.16);
-  --line-strong: rgba(45, 226, 195, 0.38);
-
-  --text: #e8f1ee;
-  --text-dim: #93aca4;
-  --text-faint: #5c7a71;
-
-  --accent: #2de2c3;      /* trace cyan */
-  --accent-2: #39d353;    /* terminal green */
-  --copper: #e8b84b;      /* gold pads */
-  --danger: #ff6b6b;
-
-  --accent-glow: rgba(45, 226, 195, 0.35);
-
-  /* typography */
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-
-  --text-xs: 0.72rem;
-  --text-sm: 0.85rem;
-  --text-base: 1rem;
-  --text-lg: 1.2rem;
-  --text-xl: clamp(1.5rem, 3vw, 2rem);
-  --text-display: clamp(2.4rem, 7vw, 4.6rem);
-
-  /* spacing & misc */
-  --space-1: 0.375rem;
-  --space-2: 0.75rem;
-  --space-3: 1.25rem;
-  --space-4: 2rem;
-  --space-5: 3.5rem;
-  --radius: 10px;
-  --radius-lg: 16px;
-  --header-h: 58px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-body {
+  color-scheme: dark;
+  --bg: #08090b;
+  --bg-raised: #111317;
+  --text: #eeefec;
+  --text-dim: #a5a6aa;
+  --text-faint: #93959b;
+  --line: #282a2e;
+  --line-strong: #42454b;
+  --accent: #c3d5af;
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
   font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  font-synthesis: none;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
-
-h1, h2, h3, h4 {
-  line-height: 1.15;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+* {
+  box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+button,
 a {
-  color: var(--accent);
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+}
+a {
+  color: inherit;
   text-decoration: none;
 }
-
 button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
+  border: 0;
   background: none;
-  color: inherit;
 }
-
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  font-weight: 500;
+}
+p {
+  text-wrap: pretty;
+}
 img {
   max-width: 100%;
   display: block;
 }
-
+svg {
+  flex-shrink: 0;
+}
+em {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
 ::selection {
-  background: var(--accent);
+  background: var(--text);
   color: var(--bg);
 }
-
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 6px;
+  border-radius: 2px;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -116,18 +100,22 @@ img {
   white-space: nowrap;
   border: 0;
 }
-
-/* thin mono scrollbar fits the terminal aesthetic */
-::-webkit-scrollbar {
-  width: 10px;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
-::-webkit-scrollbar-track {
-  background: var(--bg);
+html[data-motion="paused"] {
+  scroll-behavior: auto;
 }
-::-webkit-scrollbar-thumb {
-  background: #14312a;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #1d4a3f;
+html[data-motion="paused"] *,
+html[data-motion="paused"] *::before,
+html[data-motion="paused"] *::after {
+  animation-play-state: paused !important;
 }
