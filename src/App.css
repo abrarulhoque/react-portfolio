@@ -401,7 +401,7 @@ h2 {
 }
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 28px;
   row-gap: 48px;
 }
@@ -412,6 +412,7 @@ h2 {
   width: 100%;
 }
 .project-art {
+  width: 100%;
   aspect-ratio: 1.69;
   overflow: hidden;
   border: 1px solid #2c2e32;
@@ -1667,7 +1668,7 @@ button:active,
     display: none;
   }
   .project-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 36px;
   }
   .project-art {

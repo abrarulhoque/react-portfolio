@@ -39,7 +39,8 @@ Completed and visually checked sequentially:
 All illustrations identify themselves as demos. Amounts are examples, not published client pricing. CAD files, credentials, and checkout controls are visual-only; no real requests or transactions occur.
 
 - Production Chromium: each card starts on mouse hover; leaving resets it and cancels timers. Only the hovered card plays. No nested buttons.
-- Card geometry and illustrative action bounds checked at 320, 390, 600, 768, 820, 1100, and 1440 pixels.
+- Card, illustration, text, and illustrative action bounds checked against their actual section containers at 320, 360, 375, 390, 414, 440, 480, 600, 601, 768, 820, 1024, 1100, and 1440 pixels. Every row has equal outer gutters.
+- Fixed project-card clipping caused by the illustration's 320px minimum height transferring through its aspect ratio into an oversized minimum width. Zero-minimum grid tracks and an explicit 100% illustration width keep cards within the section. The earlier page-level overflow check missed this because the portfolio wrapper clips overflow; checks now compare child and parent bounds directly.
 - All stages in every case study checked at 320 and 390 pixels, with touch emulation. No horizontal dialog scrolling or clipped actions. Explicit width prevents the illustration's minimum height and aspect ratio from widening the dialog.
 - Manual play, stop, replay, Escape, and focus restoration to the originating card passed.
 - Keyboard Enter opens a card and starts/stops its preview. Dialog playback is manual: moving over the Play button does not start the timeline before a click.
