@@ -1,4 +1,4 @@
-import { Component, lazy, Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -12,22 +12,17 @@ import {
   Copy,
   Github,
   Linkedin,
+  BadgeCheck,
+  Repeat2,
 } from "lucide-react";
 import { projects, services, faqs } from "./lunar/content";
 import ProjectVisual from "./lunar/ProjectVisual";
+import WorldGlobe from "./lunar/WorldGlobe";
+import { completedOrders, countrySales } from "./lunar/countrySales";
 import "./App.css";
+import "./lunar/globe.css";
 
-const MoonScene = lazy(() => import("./lunar/MoonScene"));
 const email = "abrar@builtbyabrar.com";
-class SceneBoundary extends Component {
-  state = { failed: false };
-  static getDerivedStateFromError() {
-    return { failed: true };
-  }
-  render() {
-    return this.state.failed ? null : this.props.children;
-  }
-}
 function useMotionPreference() {
   const [reduced, setReduced] = useState(
     () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
@@ -240,22 +235,27 @@ export default function App() {
               <span className="status-dot" /> Based in Bangladesh. Building
               worldwide.
             </div>
+            <a
+              className="hero-reputation hero-enter"
+              href="https://www.fiverr.com/abrar_h_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View my Fiverr profile: Fiverr’s Choice for WooCommerce and repeat buyers"
+            >
+              <span
+                className="fiverr-choice"
+                title="Fiverr’s Choice on my WooCommerce gig"
+              >
+                <BadgeCheck size={15} aria-hidden="true" />
+                Fiverr’s Choice
+              </span>
+              <span className="repeat-buyers">
+                <Repeat2 size={15} aria-hidden="true" />
+                Repeat buyers on Fiverr
+              </span>
+            </a>
           </div>
-          <div className="lunar-stage" aria-label="Animated lunar scene">
-            <div className="moon-fallback" aria-hidden="true" />
-            <SceneBoundary>
-              <Suspense fallback={null}>
-                <MoonScene paused={still} />
-              </Suspense>
-            </SceneBoundary>
-            <div className="orbit-label orbit-label-top" aria-hidden="true">
-              <span /> A little outside the ordinary
-            </div>
-            <div className="moon-coordinate" aria-hidden="true">
-              <span>01 / Lunar study</span>
-              <span>Always exploring.</span>
-            </div>
-          </div>
+          <WorldGlobe paused={still} />
           <div className="hero-bottom">
             <a href="#work" className="scroll-cue">
               <span className="scroll-line" /> Scroll to explore{" "}
@@ -285,10 +285,8 @@ export default function App() {
         </section>
         <div className="proof-strip section-shell" data-reveal>
           <div>
-            <strong>
-              700<span>+</span>
-            </strong>
-            <span>Completed projects</span>
+            <strong>{completedOrders}</strong>
+            <span>Completed orders</span>
           </div>
           <div>
             <strong>
@@ -297,9 +295,7 @@ export default function App() {
             <span>Years of freelance work</span>
           </div>
           <div>
-            <strong>
-              12<span>+</span>
-            </strong>
+            <strong>{countrySales.length}</strong>
             <span>Countries worked with</span>
           </div>
           <p>
@@ -341,7 +337,7 @@ export default function App() {
                   aria-label={`Read case study: ${project.title}`}
                 >
                   <div className="project-art">
-                    <ProjectVisual type={project.id} />
+                    <ProjectVisual type={project.id} paused={still || Boolean(selected)} />
                     <span className="project-open">
                       <ArrowUpRight size={21} />
                     </span>
@@ -456,7 +452,7 @@ export default function App() {
             </p>
             <p>
               Off the clock, I build tools for myself. Android apps, little
-              automations, and occasionally a moon in a browser.
+              automations, and occasionally a globe in a browser.
             </p>
             <div className="about-socials">
               <a
@@ -630,7 +626,7 @@ export default function App() {
             </span>
             <h2 id="case-title">{selected.title}</h2>
             <div className="case-visual">
-              <ProjectVisual type={selected.id} />
+              <ProjectVisual type={selected.id} paused={still} controls />
             </div>
             <h3>The problem</h3>
             <p>{selected.problem}</p>

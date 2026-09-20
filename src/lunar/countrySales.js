@@ -1,0 +1,58 @@
+// Owner-supplied Fiverr map snapshot, 20 September 2026.
+// ISO 3166-1 numeric IDs match Natural Earth / world-atlas geography.
+// The dashboard's 773 completed orders include 2 not assigned by the map.
+export const countrySales = [
+  ["840", "United States", 458, -98, 39],
+  ["826", "United Kingdom", 74, -2, 54],
+  ["276", "Germany", 39, 10, 51],
+  ["124", "Canada", 34, -106, 56],
+  ["036", "Australia", 23, 134, -25],
+  ["208", "Denmark", 13, 10, 56],
+  ["250", "France", 13, 2, 47],
+  ["724", "Spain", 13, -4, 40],
+  ["380", "Italy", 12, 12.5, 43],
+  ["528", "Netherlands", 12, 5.3, 52.2],
+  ["756", "Switzerland", 12, 8.2, 46.8],
+  ["484", "Mexico", 5, -102, 24],
+  ["752", "Sweden", 5, 15, 62],
+  ["233", "Estonia", 4, 25.5, 58.7],
+  ["578", "Norway", 4, 9, 62],
+  ["616", "Poland", 4, 19, 52],
+  ["710", "South Africa", 4, 25, -29],
+  ["050", "Bangladesh", 3, 90.4, 23.8],
+  ["372", "Ireland", 3, -8, 53],
+  ["376", "Israel", 3, 34.8, 31.5],
+  ["388", "Jamaica", 2, -77.3, 18.1],
+  ["504", "Morocco", 2, -6, 32],
+  ["591", "Panama", 2, -80, 8.5],
+  ["780", "Trinidad and Tobago", 2, -61.3, 10.5],
+  ["784", "United Arab Emirates", 2, 54, 24],
+  ["704", "Vietnam", 2, 108, 16],
+  ["008", "Albania", 1, 20, 41],
+  ["040", "Austria", 1, 14, 47.5],
+  ["044", "Bahamas", 1, -77.4, 25.05],
+  ["056", "Belgium", 1, 4.5, 50.8],
+  ["100", "Bulgaria", 1, 25, 42.7],
+  ["156", "China", 1, 104, 35],
+  ["170", "Colombia", 1, -74, 4],
+  ["191", "Croatia", 1, 16, 45.5],
+  ["196", "Cyprus", 1, 33.2, 35],
+  ["218", "Ecuador", 1, -78.5, -1.5],
+  ["246", "Finland", 1, 26, 64],
+  ["392", "Japan", 1, 138, 37],
+  ["428", "Latvia", 1, 25, 57],
+  ["458", "Malaysia", 1, 102, 4],
+  ["554", "New Zealand", 1, 173, -41],
+  ["586", "Pakistan", 1, 69, 30],
+  ["682", "Saudi Arabia", 1, 45, 24],
+  ["705", "Slovenia", 1, 14.8, 46.1],
+  ["410", "South Korea", 1, 128, 36],
+  ["764", "Thailand", 1, 101, 15],
+  ["804", "Ukraine", 1, 32, 49],
+].map(([id, name, sales, longitude, latitude]) => ({
+  id, name, sales, longitude, latitude,
+}));
+
+export const salesById = new Map(countrySales.map((country) => [country.id, country]));
+export const mappedSales = countrySales.reduce((sum, country) => sum + country.sales, 0);
+export const completedOrders = 773;

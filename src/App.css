@@ -175,6 +175,35 @@ h1 em {
   background: var(--accent);
   box-shadow: 0 0 8px #c3d5af35;
 }
+.hero-reputation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px 16px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 17px;
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.hero-reputation > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.fiverr-choice {
+  padding: 7px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  color: var(--text);
+}
+.fiverr-choice svg {
+  color: var(--accent);
+}
+.hero-reputation:hover .repeat-buyers {
+  color: var(--text);
+}
 .lunar-stage {
   position: absolute;
   width: 650px;
