@@ -42,6 +42,7 @@ All illustrations identify themselves as demos. Amounts are examples, not publis
 - Card geometry and illustrative action bounds checked at 320, 390, 600, 768, 820, 1100, and 1440 pixels.
 - All stages in every case study checked at 320 and 390 pixels, with touch emulation. No horizontal dialog scrolling or clipped actions. Explicit width prevents the illustration's minimum height and aspect ratio from widening the dialog.
 - Manual play, stop, replay, Escape, and focus restoration to the originating card passed.
+- Keyboard Enter opens a card and starts/stops its preview. Dialog playback is manual: moving over the Play button does not start the timeline before a click.
 - Global pause cancels in-flight stages, and no delayed stages restart. Reduced motion leaves static illustrations and disables playback.
 - All new animation code uses the existing React runtime, CSS transitions, and short local timers; no new runtime animation dependency.
 
@@ -52,6 +53,14 @@ All illustrations identify themselves as demos. Amounts are examples, not publis
 - HTTP redirects to HTTPS; HTTPS root redirects to `https://www.abrarulhoque.com/`; final response is HTTP 200.
 - The preceding moon portfolio initially rendered in both a clean Chromium session and the owner's existing Chrome tab. Direct navigation in the owner's Chrome then reproduced `ERR_CONNECTION_TIMED_OUT`, before the document loaded.
 - Requests pinned to the domain's resolved edge addresses produced different results: several `216.150.*` addresses served HTTP 200 while others timed out or refused connections. This identifies an address-dependent connectivity issue from the current network, not a React rendering failure. The exact cause still needs confirmation; no DNS changes were made during these checks.
+- Deeper Chrome DNS diagnostics and read-only firewall inspection were blocked by browser policy and automatic SelfControl protection review. No protective settings were changed or bypassed.
+
+## Initial publication
+
+- Commit `d700f75` was pushed to `main` and Vercel reported the production deployment Ready: `https://react-portfolio-px7dnhtof-abrarulhoques-projects.vercel.app`.
+- Vercel attached the root domain, `www`, and the existing `react-portfolio-kappa-eosin-94.vercel.app` alias to that deployment.
+- On `www.abrarulhoque.com`, the HTML, JavaScript, stylesheet, and geographic JSON were available. Downloaded entry assets and geography matched the local production build byte for byte. Browser DOM contained the globe, Fiverr recognition, and all four workflow previews.
+- A subsequent small correction restricts hover playback to project cards so the dialog Play button remains under explicit user control.
 
 ## Limits
 

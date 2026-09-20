@@ -43,7 +43,8 @@ export default function WorkflowPreview({
 
   useEffect(() => {
     const node = root.current;
-    const trigger = node.closest(".project-button") || node;
+    // Cards play on hover; dialogs only play through their explicit control.
+    const trigger = node.closest(".project-button");
     const enter = (event) => {
       if (
         event.pointerType === "mouse" &&
@@ -62,13 +63,13 @@ export default function WorkflowPreview({
       if (!entry.isIntersecting) stop();
     });
     observer.observe(node);
-    trigger.addEventListener("pointerenter", enter);
-    trigger.addEventListener("pointerleave", leave);
+    trigger?.addEventListener("pointerenter", enter);
+    trigger?.addEventListener("pointerleave", leave);
     document.addEventListener("visibilitychange", visibility);
     return () => {
       observer.disconnect();
-      trigger.removeEventListener("pointerenter", enter);
-      trigger.removeEventListener("pointerleave", leave);
+      trigger?.removeEventListener("pointerenter", enter);
+      trigger?.removeEventListener("pointerleave", leave);
       document.removeEventListener("visibilitychange", visibility);
     };
   }, [start, stop]);
